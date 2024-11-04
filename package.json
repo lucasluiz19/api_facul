@@ -2,12 +2,13 @@
   "name": "back-end-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "build": "prisma generate && node src/server.js"
+    "build": "node src/server.js",
+    "prebuild": "prisma generate"
   },
   "keywords": [],
   "author": "",
